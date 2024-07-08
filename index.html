@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta Instrução Técnica Bombeiro</h1>
+        <select id="pdfSelector" onchange="loadSelectedPDF();">
+            <option value="">Selecione uma IT</option>
+            <option value="pdfs/IT_01.pdf">IT 01</option>
+            <option value="pdfs/IT_02.pdf">IT 02</option>
+            <option value="pdfs/IT_03.pdf">IT 03</option>
+            <option value="pdfs/IT_04.pdf">IT 04</option>
+            <option value="pdfs/IT_05.pdf">IT 05</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select>
+        <input id="searchInput" type="text" placeholder="Pesquisar palavra-chave" />
+        <button onclick="searchKeyword();">Pesquisar</button>
+        <div id="output" style="white-space: pre-wrap;"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
